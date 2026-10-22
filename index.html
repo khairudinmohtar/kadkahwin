@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Khairudin &amp; Fathihin · 27.12.2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Pinyon+Script&family=Italiana&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --olive:#8b9a52;--olive-d:#6f7e3b;--cream:#fbf5e7;--card:#fffaf0;
+  --rose:#d9648a;--rose-l:#f2b8cb;--wine:#7a1f3d;--forest:#2f5d3a;--ink:#5a2a38;
+  --stitch:%23e58aa9;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  --serif:'Cormorant Garamond',Georgia,serif;--script:'Pinyon Script','Snell Roundhand',cursive;--name:'Playfair Display',Georgia,serif;--caps:'Italiana','Cormorant Garamond',Georgia,serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --olive:#4f5a2b;--olive-d:#3d4722;--cream:#1f2419;--card:#2a3022;--rose:#f08fb0;--rose-l:#7a3a52;--wine:#f3c4d3;--forest:#b9d6a0;--ink:#ecdfd0;}}
+:root[data-theme="dark"]{--olive:#4f5a2b;--olive-d:#3d4722;--cream:#1f2419;--card:#2a3022;--rose:#f08fb0;--rose-l:#7a3a52;--wine:#f3c4d3;--forest:#b9d6a0;--ink:#ecdfd0}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--olive);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--olive);z-index:30}
+.wrap{max-width:480px;margin:0 auto;background:var(--cream);overflow:hidden;box-shadow:0 0 60px rgba(0,0,0,.18)}
+.sec{padding:56px 28px;text-align:center;position:relative}
+.green{background:var(--olive) radial-gradient(rgba(255,255,255,.18) 1px,transparent 1.5px) 0 0/22px 22px;color:#fffaf0}
+.stitch{height:26px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13'%3E%3Cpath d='M3 3l7 7M10 3L3 10' stroke='%23e58aa9' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x center}
+.stitch.lt{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13'%3E%3Cpath d='M3 3l7 7M10 3L3 10' stroke='%23ffffff55' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E")}
+.cap{font-family:var(--caps);letter-spacing:.28em;text-transform:uppercase;font-size:14px;color:var(--wine)}
+.script{font-family:var(--script);font-weight:400;line-height:1}
+h2{font-family:var(--script);font-weight:400;font-size:52px;margin:0 0 10px;color:var(--forest)}
+p{margin:0 0 14px}
+.orn{color:var(--rose);font-size:22px;margin:22px 0}
+/* cover */
+#cover{position:fixed;inset:0;z-index:50;background:var(--olive) radial-gradient(rgba(255,255,255,.2) 1px,transparent 1.5px) 0 0/22px 22px;color:#fffaf0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;padding:calc(24px + env(safe-area-inset-top,0px)) 24px calc(24px + env(safe-area-inset-bottom,0px));transition:transform 1s cubic-bezier(.7,0,.2,1)}
+#cover.open{transform:translateY(-102%)}
+#cover .cap{color:#fffaf0;font-size:17px}
+.btn{font-family:var(--caps);letter-spacing:.2em;text-transform:uppercase;font-size:14px;border:1.5px solid currentColor;background:transparent;color:inherit;padding:13px 28px;border-radius:999px;cursor:pointer;text-decoration:none;display:inline-block;transition:.25s}
+.btn:hover{background:var(--rose);border-color:var(--rose);color:#fff}
+.btn.fill{background:var(--wine);color:#fffaf0;border-color:var(--wine)}
+.btn.fill:hover{background:var(--rose);border-color:var(--rose)}
+/* photo */
+.ph{position:relative;background:linear-gradient(135deg,#e9dcc6,#d7c3a6);border-radius:4px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:14px;color:#7b6650;cursor:pointer;background-size:cover;background-position:center;overflow:hidden}
+.ph.has span{display:none}
+.frame{border:8px solid var(--rose);outline:2px solid var(--rose-l);outline-offset:-14px;background:var(--rose);padding:0;box-shadow:0 14px 30px rgba(0,0,0,.2)}
+.polaroid{background:#fff;padding:7px 7px 22px;box-shadow:0 8px 18px rgba(0,0,0,.18);transform:rotate(3deg)}
+/* hero */
+.hero{padding-top:40px}
+.names{font-family:var(--name);font-weight:600;font-size:40px;line-height:1.2;letter-spacing:.02em;margin:14px 0 6px}
+.names .a{color:var(--rose);display:block}
+.names .amp{font-family:var(--script);font-weight:400;font-size:38px;color:var(--wine);display:block;margin:0}
+.names .b{color:var(--forest);display:block}
+.fan{width:210px;margin:6px auto 12px;display:block}
+/* postcard */
+.post{margin:0 -10px;background:var(--card);border:7px solid var(--rose);display:grid;grid-template-columns:1fr 1fr;text-align:left;transform:rotate(-2deg);box-shadow:0 14px 30px rgba(0,0,0,.25)}
+.post>div{padding:18px 14px}
+.post>div+div{border-left:1px solid var(--ink);text-align:center;display:flex;flex-direction:column;justify-content:center}
+.post .script{font-size:44px;color:var(--wine);margin:6px 0}
+.post em{font-size:15px;color:var(--rose)}
+/* countdown */
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}
+.cd div{background:rgba(255,250,240,.12);border:1px solid rgba(255,255,255,.4);border-radius:14px;padding:14px 0}
+.cd b{display:block;font-family:var(--caps);font-weight:400;font-size:34px;line-height:1}
+.cd small{font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+/* names */
+.fam{font-size:17px}
+.fam strong{font-weight:600;display:block}
+.couple{font-family:var(--name);font-weight:600;font-size:30px;line-height:1.3;color:var(--wine);margin:10px 0}
+.couple span{display:block;font-family:var(--script);font-weight:400;font-size:34px;color:var(--rose)}
+.date{display:flex;align-items:center;justify-content:center;gap:14px;margin:18px 0}
+.date .d{font-family:var(--caps);font-size:56px;line-height:1;color:var(--wine);padding:0 14px;border-left:1px solid var(--wine);border-right:1px solid var(--wine)}
+/* gallery */
+.gal{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 28px 18px;margin:0 -28px;scrollbar-width:none}
+.gal .ph{flex:0 0 72%;aspect-ratio:4/5;scroll-snap-align:center}
+.gal::-webkit-scrollbar{display:none}
+/* contact */
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.ct a{display:block;background:var(--card);border:1px solid var(--rose-l);border-radius:14px;padding:12px 6px;color:inherit;text-decoration:none}
+.ct a b{display:block;font-weight:600;color:var(--wine)}
+.ct a i{font-size:14px;color:var(--rose)}
+h3{font-family:var(--caps);letter-spacing:.25em;text-transform:uppercase;font-weight:400;font-size:15px;color:var(--wine);margin:22px 0 0}
+/* rsvp */
+form{background:var(--card);border-radius:18px;padding:22px 18px;text-align:left;box-shadow:0 10px 30px rgba(0,0,0,.18);color:var(--ink)}
+label{display:block;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--rose);margin:14px 0 6px}
+input[type=text],textarea{width:100%;font:inherit;padding:11px 12px;border:1px solid var(--rose-l);border-radius:10px;background:#fff;color:#3a2028}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.seg input{display:none}
+.seg span{display:block;text-align:center;padding:11px;border:1px solid var(--rose-l);border-radius:10px;cursor:pointer}
+.seg input:checked+span{background:var(--wine);color:#fff;border-color:var(--wine)}
+.step{display:flex;align-items:center;justify-content:center;gap:22px}
+.step button{width:40px;height:40px;border-radius:50%;border:1px solid var(--rose);background:none;color:var(--rose);font-size:22px;cursor:pointer}
+.step b{font-family:var(--caps);font-size:30px;font-weight:400;min-width:30px;text-align:center}
+.mono{display:block;margin:0 auto;overflow:visible;color:var(--wine)}
+.mono .mt{font-family:var(--name);font-weight:600;font-size:82px;fill:currentColor}
+.mono .ma{font-family:var(--script);font-size:50px;fill:var(--amp,var(--rose))}
+.mono .ring{transform-box:view-box;transform-origin:50% 50%;animation:spin 50s linear infinite}
+.hero .mono{width:190px;margin:16px auto 4px}
+#cover .mono{width:min(250px,66vw);color:#fffaf0;--amp:#ffc9da}
+@keyframes up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@keyframes march{from{background-position:0 center}to{background-position:13px center}}
+@keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(255,255,255,.55)}60%{box-shadow:0 0 0 14px rgba(255,255,255,0)}}
+@keyframes fall{from{transform:translate3d(0,-10vh,0) rotate(0)}to{transform:translate3d(var(--dx,0),112vh,0) rotate(360deg)}}
+@keyframes bob{50%{transform:translateY(-5px)}}
+.stitch{animation:march 3s linear infinite}
+#cover>*{animation:up 1s both}
+#cover>:nth-child(2){animation-delay:.2s}
+#cover>:nth-child(3){animation-delay:.45s}
+#open{animation:up 1s .7s both,glow 2.4s 1.9s infinite}
+body.opened .hero>*{animation:up .9s both}
+body.opened .hero>:nth-child(1){animation-delay:.5s}
+body.opened .hero>:nth-child(2){animation-delay:.65s}
+body.opened .hero>:nth-child(3){animation-delay:.8s}
+body.opened .hero>:nth-child(5){animation-delay:1.1s}
+body.opened .hero>:nth-child(6){animation-delay:1.25s}
+.fan{transform-origin:50% 92%}
+body.opened .hero>.fan{animation:up .9s .95s both,sway 6s 2s ease-in-out infinite}
+.cd div{animation:bob 5s ease-in-out infinite}
+.cd div:nth-child(even){animation-delay:.6s}
+.post.reveal{transform:translateY(22px) rotate(-2deg)}
+.post.reveal.in{transform:rotate(-2deg)}
+#petals{position:fixed;inset:0;pointer-events:none;z-index:20;overflow:hidden}
+#petals svg{position:absolute;top:0;opacity:.7;animation:fall linear infinite}
+@media (prefers-reduced-motion:reduce){*,*::before{animation:none!important}}
+.flw{position:absolute;pointer-events:none;opacity:.9}
+footer{padding:30px 20px 40px;font-size:14px;color:#fffaf0;text-align:center}
+.reveal{opacity:0;transform:translateY(22px);transition:.9s}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}#cover{transition:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="fl" viewBox="0 0 100 100">
+      <g fill="currentColor" opacity=".92">
+        <ellipse cx="50" cy="22" rx="17" ry="24"/><ellipse cx="50" cy="22" rx="17" ry="24" transform="rotate(72 50 50)"/><ellipse cx="50" cy="22" rx="17" ry="24" transform="rotate(144 50 50)"/><ellipse cx="50" cy="22" rx="17" ry="24" transform="rotate(216 50 50)"/><ellipse cx="50" cy="22" rx="17" ry="24" transform="rotate(288 50 50)"/>
+      </g>
+      <circle cx="50" cy="50" r="11" fill="#f2b233"/><circle cx="50" cy="50" r="5" fill="#d9822b"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- COVER -->
+<section id="cover">
+  <div class="cap">Walimatul Urus</div>
+  <svg class="mono" viewBox="0 -14 200 228" aria-label="K &amp; F"><g class="ring"><circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round" opacity=".85"/></g><circle cx="100" cy="100" r="82" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="100" cy="100" r="76" fill="none" stroke="currentColor" stroke-width=".6" opacity=".6"/><text class="mt" x="58" y="126" text-anchor="middle">K</text><text class="mt" x="142" y="126" text-anchor="middle">F</text><text class="ma" x="100" y="120" text-anchor="middle">&amp;</text><g style="color:var(--amp,var(--rose))"><use href="#fl" x="88" y="-8" width="24" height="24"/><use href="#fl" x="88" y="184" width="24" height="24"/></g></svg>
+  <div style="font-family:var(--name);font-weight:600;font-size:30px;letter-spacing:.02em">Khairudin &amp; Fathihin</div>
+  <button class="btn" id="open">Buka Undangan</button>
+</section>
+
+<main class="wrap">
+  <!-- HERO -->
+  <section class="sec hero">
+    <div class="cap">Walimatul Urus</div>
+    <svg class="mono" viewBox="0 -14 200 228" aria-label="K &amp; F"><g class="ring"><circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round" opacity=".85"/></g><circle cx="100" cy="100" r="82" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="100" cy="100" r="76" fill="none" stroke="currentColor" stroke-width=".6" opacity=".6"/><text class="mt" x="58" y="126" text-anchor="middle">K</text><text class="mt" x="142" y="126" text-anchor="middle">F</text><text class="ma" x="100" y="120" text-anchor="middle">&amp;</text><g style="color:var(--amp,var(--rose))"><use href="#fl" x="88" y="-8" width="24" height="24"/><use href="#fl" x="88" y="184" width="24" height="24"/></g></svg>
+    <h1 class="names"><span class="a">Khairudin</span><span class="amp">&amp;</span><span class="b">Fathihin</span></h1>
+    <svg class="fan" viewBox="0 0 200 130" aria-hidden="true">
+      <path d="M100 118 L12 52 A110 110 0 0 1 188 52 Z" fill="#cfe0c4"/>
+      <g stroke="#fffaf0" stroke-width="1" opacity=".8"><path d="M100 118L30 40M100 118L55 28M100 118L80 22M100 118L100 20M100 118L120 22M100 118L145 28M100 118L170 40"/></g>
+      <g style="color:#f0a6bd"><use href="#fl" x="55" y="35" width="26" height="26"/><use href="#fl" x="87" y="22" width="26" height="26"/><use href="#fl" x="119" y="35" width="26" height="26"/></g>
+      <path d="M100 118 L84 96 A40 40 0 0 1 116 96 Z" fill="#f0c36b"/>
+      <circle cx="100" cy="120" r="7" fill="#8a5a5a"/>
+    </svg>
+    <p style="color:var(--rose);margin-top:8px;font-style:italic">Dengan penuh kesyukuran, kami menjemput anda meraikan permulaan bab baharu kehidupan kami.</p>
+    <div class="orn">❦</div>
+  </section>
+  <div class="stitch"></div>
+
+  <!-- POSTCARD -->
+  <section class="sec green">
+    <div class="script" style="font-size:58px;color:#fff3c4;margin:0 0 30px;text-shadow:0 2px 8px rgba(0,0,0,.35)">You’re Invited</div>
+    <div class="post reveal">
+      <div>
+        <div class="cap" style="font-size:12px">Hadirlah ke</div>
+        <div class="script">Majlis Perkahwinan</div>
+        <svg viewBox="0 0 120 40" width="100" aria-hidden="true"><g fill="none" stroke="#c986a2" stroke-width="2"><path d="M10 30c10-4 8-22 20-20s6 14-4 12"/><path d="M110 30c-10-4-8-22-20-20s-6 14 4 12"/></g></svg>
+      </div>
+      <div>
+        <div class="orn" style="margin:0 0 8px">❦</div>
+        <em>Kehadiran dan doa restu anda amat bermakna bagi kami.</em>
+      </div>
+    </div>
+  </section>
+  <div class="stitch lt" style="background-color:var(--olive)"></div>
+
+  <!-- COUNTDOWN -->
+  <section class="sec green" style="padding-top:34px">
+    <h2 style="color:#fffaf0">Menghitung Hari</h2>
+    <div class="cd" id="cd"><div><b id="d">--</b><small>Hari</small></div><div><b id="h">--</b><small>Jam</small></div><div><b id="m">--</b><small>Minit</small></div><div><b id="s">--</b><small>Saat</small></div></div>
+    <p id="done" style="display:none;margin-top:18px;font-style:italic">Alhamdulillah, majlis telah berlangsung. Terima kasih atas doa dan kehadiran anda.</p>
+  </section>
+
+  <!-- FAMILY + DETAILS -->
+  <section class="sec">
+    <div class="fam reveal">
+      <strong>Allahyarham Hj Mohtar Bin Abdul Wahab</strong>
+      <strong>Siti Rohimah Binti Elias</strong>
+      <p style="margin:8px 0;color:var(--rose)">dan</p>
+      <strong>Nazli Bin Ayob</strong>
+      <strong>Aini Binti Munirin</strong>
+    </div>
+    <p style="margin-top:22px">Dengan penuh kesyukuran, kami menjemput Datuk | Datin | Tuan | Puan | Encik | Cik ke majlis perkahwinan</p>
+    <div class="couple reveal">Muhammad Khairudin<span>&amp;</span>Aina Fathihin</div>
+    <div class="orn">❦</div>
+    <h2>Save The Date</h2>
+    <div class="date reveal"><div class="cap">Ahad</div><div class="d">27</div><div class="cap">11:00 AM</div></div>
+    <div class="cap" style="font-size:16px">Disember 2026 · 11:00 AM – 4:00 PM</div>
+    <p style="margin:14px 0 0;font-weight:600;letter-spacing:.08em">ALAM MAYA, SHAH ALAM</p>
+    <svg viewBox="0 0 60 60" width="64" style="margin:20px auto 0;display:block;opacity:.7" aria-hidden="true"><g fill="none" stroke="#c9a5b0" stroke-width="1.6"><circle cx="30" cy="30" r="22"/><path d="M30 8c10 8 10 36 0 44M30 8c-10 8-10 36 0 44M8 30c8-10 36-10 44 0M8 30c8 10 36 10 44 0"/></g></svg>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="sec" style="background:var(--card);padding-top:44px">
+    <h2>Lokasi Majlis</h2>
+    <p>Alam Maya, Shah Alam</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:14px 0 22px">
+      <a class="btn fill" href="https://maps.google.com/?q=Alam%20Maya%20Shah%20Alam" target="_blank" rel="noopener">Google Maps</a>
+      <a class="btn" style="color:var(--wine)" href="https://waze.com/ul?q=Alam%20Maya%20Shah%20Alam" target="_blank" rel="noopener">Waze</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="sec">
+    <h2>Hubungi</h2>
+    <p>Sebarang pertanyaan boleh hubungi keluarga pengantin.</p>
+    <div class="ct">
+      <a href="https://wa.me/60176761170" target="_blank" rel="noopener"><b>Fakhrul</b><i>Abang</i></a>
+      <a href="https://wa.me/60193980054" target="_blank" rel="noopener"><b>Aishah</b><i>Kakak</i></a>
+    </div>
+    <div class="orn">❦</div>
+    <p style="font-style:italic;font-size:17px">Ya Allah, berkatilah satukanlah hati kedua pasangan mempelai ini dengan iman, keyakinan dan tawakal kepada-Mu, panjangkan umur mereka, lapangkanlah rezeki mereka, dekatkanlah mereka menuju kebaikan, jauhkanlah mereka daripada keburukan, kurniakanlah mereka zuriat yang soleh dan solehah.</p>
+  </section>
+  <div class="stitch"></div>
+
+  <!-- RSVP -->
+  <section class="sec green">
+    <h2 style="color:#fffaf0">Kindly RSVP</h2>
+    <p>Sahkan kehadiran anda</p>
+    <form id="rsvp">
+      <label for="nm">Nama</label>
+      <input id="nm" type="text" required autocomplete="name">
+      <label>Kehadiran</label>
+      <div class="seg">
+        <label style="margin:0;text-transform:none;letter-spacing:0;font-size:17px"><input type="radio" name="a" value="Hadir" checked><span>Hadir</span></label>
+        <label style="margin:0;text-transform:none;letter-spacing:0;font-size:17px"><input type="radio" name="a" value="Tidak Hadir"><span>Tidak Hadir</span></label>
+      </div>
+      <label>Bilangan hadir</label>
+      <div class="step"><button type="button" id="mn" aria-label="Kurang">−</button><b id="cnt">1</b><button type="button" id="pl" aria-label="Tambah">+</button></div>
+      <label for="ms">Ucapan (pilihan)</label>
+      <textarea id="ms" rows="3"></textarea>
+      <div style="text-align:center;margin-top:20px"><button class="btn fill" type="submit">Hantar RSVP</button></div>
+      <p style="font-size:13px;text-align:center;margin:12px 0 0;opacity:.7">RSVP dihantar melalui WhatsApp kepada keluarga pengantin.</p>
+    </form>
+  </section>
+  <div class="stitch lt" style="background-color:var(--olive)"></div>
+  <footer class="green">Khairudin &amp; Fathihin · 27.12.2026</footer>
+</main>
+
+<script>
+(function(){
+  var cover=document.getElementById('cover');
+  document.getElementById('open').onclick=function(){cover.classList.add('open');document.body.classList.add('opened');setTimeout(function(){cover.style.display='none'},1100);window.scrollTo(0,0)};
+  // photo slots
+  document.querySelectorAll('[data-ph]').forEach(function(el){
+    var inp=document.createElement('input');inp.type='file';inp.accept='image/*';inp.hidden=true;el.appendChild(inp);
+    el.addEventListener('click',function(e){if(e.target!==inp)inp.click()});
+    inp.onchange=function(){var f=inp.files[0];if(!f)return;var r=new FileReader();r.onload=function(){document.querySelectorAll('[data-ph]').forEach(function(x){});el.style.backgroundImage='url('+r.result+')';el.classList.add('has')};r.readAsDataURL(f)};
+  });
+  // countdown
+  var T=new Date('2026-12-27T11:00:00+08:00').getTime();
+  function tick(){
+    var n=T-Date.now();
+    if(n<=0){document.getElementById('cd').style.display='none';document.getElementById('done').style.display='block';return}
+    var p=function(x){return String(x).padStart(2,'0')};
+    document.getElementById('d').textContent=Math.floor(n/864e5);
+    document.getElementById('h').textContent=p(Math.floor(n%864e5/36e5));
+    document.getElementById('m').textContent=p(Math.floor(n%36e5/6e4));
+    document.getElementById('s').textContent=p(Math.floor(n%6e4/1e3));
+  }
+  tick();setInterval(tick,1000);
+  // stepper
+  var c=1,cn=document.getElementById('cnt');
+  document.getElementById('pl').onclick=function(){if(c<10)cn.textContent=++c};
+  document.getElementById('mn').onclick=function(){if(c>1)cn.textContent=--c};
+  // rsvp -> whatsapp
+  document.getElementById('rsvp').onsubmit=function(e){
+    e.preventDefault();
+    var a=document.querySelector('input[name=a]:checked').value;
+    var t='Salam, RSVP majlis Khairudin & Fathihin (27.12.2026)%0ANama: '+encodeURIComponent(document.getElementById('nm').value)+'%0AKehadiran: '+encodeURIComponent(a)+(a==='Hadir'?'%0ABilangan: '+c:'')+(document.getElementById('ms').value?'%0AUcapan: '+encodeURIComponent(document.getElementById('ms').value):'');
+    window.open('https://wa.me/60193980054?text='+t,'_blank');
+  };
+  // petals + reveal
+  document.querySelectorAll('.sec:not(.hero)>*').forEach(function(x){x.classList.add('reveal')});
+  if(!matchMedia('(prefers-reduced-motion:reduce)').matches){
+    var pl=document.createElement('div');pl.id='petals';pl.setAttribute('aria-hidden','true');
+    var cols=['#f2b8cb','#e58aa9','#f6d7a7','#ffffff'],NS='http://www.w3.org/2000/svg';
+    for(var i=0;i<12;i++){var sz=16+Math.random()*16,s=document.createElementNS(NS,'svg'),u=document.createElementNS(NS,'use');s.setAttribute('viewBox','0 0 100 100');u.setAttribute('href','#fl');s.appendChild(u);s.style.cssText='left:'+(Math.random()*100)+'%;width:'+sz+'px;height:'+sz+'px;color:'+cols[i%4]+';animation-duration:'+(12+Math.random()*10)+'s;animation-delay:-'+(Math.random()*20)+'s;--dx:'+(Math.random()*120-60)+'px';pl.appendChild(s)}
+    document.body.appendChild(pl);
+  }
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(function(x){io.observe(x)});
+})();
+</script>
+</body>
+</html>
