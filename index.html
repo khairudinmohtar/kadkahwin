@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Khairudin &amp; Fathihin · 27.12.2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Pinyon+Script&family=Italiana&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Pinyon+Script&family=Italiana&family=Playfair+Display:wght@500;600&family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
 :root{
   --olive:#8b9a52;--olive-d:#6f7e3b;--cream:#fbf5e7;--card:#fffaf0;
   --rose:#d9648a;--rose-l:#f2b8cb;--wine:#7a1f3d;--forest:#2f5d3a;--ink:#5a2a38;
   --stitch:%23e58aa9;
   box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
-  --serif:'Cormorant Garamond',Georgia,serif;--script:'Pinyon Script','Snell Roundhand',cursive;--name:'Playfair Display',Georgia,serif;--caps:'Italiana','Cormorant Garamond',Georgia,serif;
+  --serif:'Cormorant Garamond',Georgia,serif;--script:'Pinyon Script','Snell Roundhand',cursive;--name:'Playfair Display',Georgia,serif;--name2:'Great Vibes','Pinyon Script',cursive;--mono:'Cinzel Decorative',Georgia,serif;--caps:'Italiana','Cormorant Garamond',Georgia,serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --olive:#4f5a2b;--olive-d:#3d4722;--cream:#1f2419;--card:#2a3022;--rose:#f08fb0;--rose-l:#7a3a52;--wine:#f3c4d3;--forest:#b9d6a0;--ink:#ecdfd0;}}
@@ -45,9 +45,9 @@ p{margin:0 0 14px}
 .polaroid{background:#fff;padding:7px 7px 22px;box-shadow:0 8px 18px rgba(0,0,0,.18);transform:rotate(3deg)}
 /* hero */
 .hero{padding-top:40px}
-.names{font-family:var(--name);font-weight:600;font-size:40px;line-height:1.2;letter-spacing:.02em;margin:14px 0 6px}
+.names{font-family:var(--name2);font-weight:400;font-size:62px;line-height:1.05;letter-spacing:0;margin:14px 0 6px}
 .names .a{color:var(--rose);display:block}
-.names .amp{font-family:var(--script);font-weight:400;font-size:38px;color:var(--wine);display:block;margin:0}
+.names .amp{font-family:var(--name2);font-weight:400;font-size:44px;color:var(--wine);display:block;margin:0}
 .names .b{color:var(--forest);display:block}
 .fan{width:210px;margin:6px auto 12px;display:block}
 /* postcard */
@@ -64,8 +64,8 @@ p{margin:0 0 14px}
 /* names */
 .fam{font-size:17px}
 .fam strong{font-weight:600;display:block}
-.couple{font-family:var(--name);font-weight:600;font-size:30px;line-height:1.3;color:var(--wine);margin:10px 0}
-.couple span{display:block;font-family:var(--script);font-weight:400;font-size:34px;color:var(--rose)}
+.couple{font-family:var(--name2);font-weight:400;font-size:46px;line-height:1.15;color:var(--wine);margin:10px 0}
+.couple span{display:block;font-family:var(--name2);font-weight:400;font-size:38px;color:var(--rose)}
 .date{display:flex;align-items:center;justify-content:center;gap:14px;margin:18px 0}
 .date .d{font-family:var(--caps);font-size:56px;line-height:1;color:var(--wine);padding:0 14px;border-left:1px solid var(--wine);border-right:1px solid var(--wine)}
 /* gallery */
@@ -90,8 +90,8 @@ input[type=text],textarea{width:100%;font:inherit;padding:11px 12px;border:1px s
 .step button{width:40px;height:40px;border-radius:50%;border:1px solid var(--rose);background:none;color:var(--rose);font-size:22px;cursor:pointer}
 .step b{font-family:var(--caps);font-size:30px;font-weight:400;min-width:30px;text-align:center}
 .mono{display:block;margin:0 auto;overflow:visible;color:var(--wine)}
-.mono .mt{font-family:var(--name);font-weight:600;font-size:82px;fill:currentColor}
-.mono .ma{font-family:var(--script);font-size:50px;fill:var(--amp,var(--rose))}
+.mono .mt{font-family:var(--name2);font-weight:400;font-size:88px;fill:currentColor}
+.mono .ma{font-family:var(--name2);font-size:40px;fill:var(--amp,var(--rose))}
 .mono .ring{transform-box:view-box;transform-origin:50% 50%;animation:spin 50s linear infinite}
 .hero .mono{width:190px;margin:16px auto 4px}
 #cover .mono{width:min(250px,66vw);color:#fffaf0;--amp:#ffc9da}
@@ -145,7 +145,7 @@ footer{padding:30px 20px 40px;font-size:14px;color:#fffaf0;text-align:center}
 <section id="cover">
   <div class="cap">Walimatul Urus</div>
   <svg class="mono" viewBox="0 -14 200 228" aria-label="K &amp; F"><g class="ring"><circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round" opacity=".85"/></g><circle cx="100" cy="100" r="82" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="100" cy="100" r="76" fill="none" stroke="currentColor" stroke-width=".6" opacity=".6"/><text class="mt" x="58" y="126" text-anchor="middle">K</text><text class="mt" x="142" y="126" text-anchor="middle">F</text><text class="ma" x="100" y="120" text-anchor="middle">&amp;</text><g style="color:var(--amp,var(--rose))"><use href="#fl" x="88" y="-8" width="24" height="24"/><use href="#fl" x="88" y="184" width="24" height="24"/></g></svg>
-  <div style="font-family:var(--name);font-weight:600;font-size:30px;letter-spacing:.02em">Khairudin &amp; Fathihin</div>
+  <div style="font-family:var(--name2);font-size:54px;line-height:1.1">Khairudin &amp; Fathihin</div>
   <button class="btn" id="open">Buka Undangan</button>
 </section>
 
@@ -197,8 +197,8 @@ footer{padding:30px 20px 40px;font-size:14px;color:#fffaf0;text-align:center}
       <strong>Allahyarham Hj Mohtar Bin Abdul Wahab</strong>
       <strong>Siti Rohimah Binti Elias</strong>
       <p style="margin:8px 0;color:var(--rose)">dan</p>
-      <strong>Nazli Bin Ayob</strong>
-      <strong>Aini Binti Munirin</strong>
+      <strong>Hj Nazli Bin Ayob</strong>
+      <strong>Hjh Aini Binti Munirin</strong>
     </div>
     <p style="margin-top:22px">Dengan penuh kesyukuran, kami menjemput Datuk | Datin | Tuan | Puan | Encik | Cik ke majlis perkahwinan</p>
     <div class="couple reveal">Muhammad Khairudin<span>&amp;</span>Aina Fathihin</div>
@@ -224,12 +224,18 @@ footer{padding:30px 20px 40px;font-size:14px;color:#fffaf0;text-align:center}
   <section class="sec">
     <h2>Hubungi</h2>
     <p>Sebarang pertanyaan boleh hubungi keluarga pengantin.</p>
+    <h3>Lelaki</h3>
     <div class="ct">
       <a href="https://wa.me/60176761170" target="_blank" rel="noopener"><b>Fakhrul</b><i>Abang</i></a>
       <a href="https://wa.me/60193980054" target="_blank" rel="noopener"><b>Aishah</b><i>Kakak</i></a>
     </div>
+    <h3>Perempuan</h3>
+    <div class="ct">
+      <a href="https://wa.me/60175258088" target="_blank" rel="noopener"><b>Aiman</b><i>Abang</i></a>
+      <a href="https://wa.me/60168727128" target="_blank" rel="noopener"><b>Aisyah</b><i>Adik</i></a>
+    </div>
     <div class="orn">❦</div>
-    <p style="font-style:italic;font-size:17px">Ya Allah, berkatilah satukanlah hati kedua pasangan mempelai ini dengan iman, keyakinan dan tawakal kepada-Mu, panjangkan umur mereka, lapangkanlah rezeki mereka, dekatkanlah mereka menuju kebaikan, jauhkanlah mereka daripada keburukan, kurniakanlah mereka zuriat yang soleh dan solehah.</p>
+    <p style="font-style:italic;font-size:17px">Barakallahu laka wa baraka ‘alaika wa jama‘a bainakuma fi khair. Semoga Allah memberkati ikatan ini, menautkan hati mereka dalam kasih sayang, dan menjadikan rumah tangga mereka tenang, penuh cinta dan rahmat.</p>
   </section>
   <div class="stitch"></div>
 
@@ -281,14 +287,14 @@ footer{padding:30px 20px 40px;font-size:14px;color:#fffaf0;text-align:center}
   tick();setInterval(tick,1000);
   // stepper
   var c=1,cn=document.getElementById('cnt');
-  document.getElementById('pl').onclick=function(){if(c<10)cn.textContent=++c};
+  document.getElementById('pl').onclick=function(){if(c<4)cn.textContent=++c};
   document.getElementById('mn').onclick=function(){if(c>1)cn.textContent=--c};
   // rsvp -> whatsapp
   document.getElementById('rsvp').onsubmit=function(e){
     e.preventDefault();
     var a=document.querySelector('input[name=a]:checked').value;
     var t='Salam, RSVP majlis Khairudin & Fathihin (27.12.2026)%0ANama: '+encodeURIComponent(document.getElementById('nm').value)+'%0AKehadiran: '+encodeURIComponent(a)+(a==='Hadir'?'%0ABilangan: '+c:'')+(document.getElementById('ms').value?'%0AUcapan: '+encodeURIComponent(document.getElementById('ms').value):'');
-    window.open('https://wa.me/60193980054?text='+t,'_blank');
+    window.open('https://wa.me/60173011253?text='+t,'_blank');
   };
   // petals + reveal
   document.querySelectorAll('.sec:not(.hero)>*').forEach(function(x){x.classList.add('reveal')});
