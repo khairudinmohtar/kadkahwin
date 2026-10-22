@@ -122,6 +122,30 @@ body.opened .hero>.fan{animation:up .9s .95s both,sway 6s 2s ease-in-out infinit
 #petals{position:fixed;inset:0;pointer-events:none;z-index:20;overflow:hidden}
 #petals svg{position:absolute;top:0;opacity:.7;animation:fall linear infinite}
 @media (prefers-reduced-motion:reduce){*,*::before{animation:none!important}}
+html{-webkit-text-size-adjust:100%}
+h2{font-size:clamp(38px,11.5vw,52px)}
+.fam strong,.couple,.sec p{text-wrap:balance}
+.names{font-size:clamp(46px,15vw,62px)}
+.names .amp{font-size:clamp(34px,10vw,44px)}
+.couple{font-size:clamp(34px,10vw,46px)}
+.couple span{font-size:clamp(28px,8vw,38px)}
+.cvname{font-family:var(--name2);font-size:clamp(34px,11vw,52px);line-height:1.1;text-align:center}
+#cover{padding-left:20px;padding-right:20px}
+#cover .mono{width:min(240px,62vw,34vh)}
+.post{grid-template-columns:1fr;margin:0 4px}
+.post>div{text-align:center}
+.post>div+div{border-left:0;border-top:1px solid var(--ink)}
+.post .script{font-size:clamp(38px,11vw,46px)}
+.date{gap:10px}
+.date .d{font-size:clamp(40px,13vw,56px);padding:0 10px}
+.date .cap{font-size:12px;letter-spacing:.16em}
+.rcard{background:var(--card);color:var(--ink);border-radius:18px;padding:26px 20px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+@media (max-width:420px){.sec{padding:48px 20px}.cd{gap:6px}.cd b{font-size:28px}.cd small{font-size:11px;letter-spacing:.1em}.ct{gap:10px}.btn{padding:12px 22px;letter-spacing:.14em}}
+.kf path{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.6s .5s ease forwards}
+.hero .kf path{animation:none;stroke-dashoffset:0}
+body.opened .hero .kf path{animation:draw 2.6s .9s ease both}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.kf path{stroke-dashoffset:0!important}}
 .flw{position:absolute;pointer-events:none;opacity:.9}
 footer{padding:30px 20px 40px;font-size:14px;color:#fffaf0;text-align:center}
 .reveal{opacity:0;transform:translateY(22px);transition:.9s}
@@ -144,8 +168,8 @@ footer{padding:30px 20px 40px;font-size:14px;color:#fffaf0;text-align:center}
 <!-- COVER -->
 <section id="cover">
   <div class="cap">Walimatul Urus</div>
-  <svg class="mono" viewBox="0 -14 200 228" aria-label="K &amp; F"><g class="ring"><circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round" opacity=".85"/></g><circle cx="100" cy="100" r="82" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="100" cy="100" r="76" fill="none" stroke="currentColor" stroke-width=".6" opacity=".6"/><text class="mt" x="58" y="126" text-anchor="middle">K</text><text class="mt" x="142" y="126" text-anchor="middle">F</text><text class="ma" x="100" y="120" text-anchor="middle">&amp;</text><g style="color:var(--amp,var(--rose))"><use href="#fl" x="88" y="-8" width="24" height="24"/><use href="#fl" x="88" y="184" width="24" height="24"/></g></svg>
-  <div style="font-family:var(--name2);font-size:54px;line-height:1.1">Khairudin &amp; Fathihin</div>
+  <svg class="mono" viewBox="0 -14 200 228" aria-label="K &amp; F"><g class="ring"><circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round" opacity=".85"/></g><circle cx="100" cy="100" r="82" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="100" cy="100" r="76" fill="none" stroke="currentColor" stroke-width=".6" opacity=".6"/><g class="kf" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" stroke-width="2.6" d="M84 40V150"/><path pathLength="1" stroke-width="1.5" d="M68 48L84 40"/><path pathLength="1" stroke-width="1.5" d="M66 150H100"/><path pathLength="1" stroke-width="1.7" d="M86 110C104 98 120 86 136 70C142 64 150 66 148 74"/><path pathLength="1" stroke-width="2.6" d="M140 64C130 104 116 142 94 168C88 175 76 174 76 164"/><path pathLength="1" stroke-width="1.5" d="M122 66C134 60 150 60 162 66"/><path pathLength="1" stroke-width="1.5" d="M112 108L146 102"/><path pathLength="1" stroke-width="1.7" d="M96 108C112 124 124 138 134 150"/></g><g style="color:var(--amp,var(--rose))"><use href="#fl" x="88" y="-8" width="24" height="24"/><use href="#fl" x="88" y="184" width="24" height="24"/></g></svg>
+  <div class="cvname">Khairudin &amp; Fathihin</div>
   <button class="btn" id="open">Buka Undangan</button>
 </section>
 
@@ -153,7 +177,7 @@ footer{padding:30px 20px 40px;font-size:14px;color:#fffaf0;text-align:center}
   <!-- HERO -->
   <section class="sec hero">
     <div class="cap">Walimatul Urus</div>
-    <svg class="mono" viewBox="0 -14 200 228" aria-label="K &amp; F"><g class="ring"><circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round" opacity=".85"/></g><circle cx="100" cy="100" r="82" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="100" cy="100" r="76" fill="none" stroke="currentColor" stroke-width=".6" opacity=".6"/><text class="mt" x="58" y="126" text-anchor="middle">K</text><text class="mt" x="142" y="126" text-anchor="middle">F</text><text class="ma" x="100" y="120" text-anchor="middle">&amp;</text><g style="color:var(--amp,var(--rose))"><use href="#fl" x="88" y="-8" width="24" height="24"/><use href="#fl" x="88" y="184" width="24" height="24"/></g></svg>
+    <svg class="mono" viewBox="0 -14 200 228" aria-label="K &amp; F"><g class="ring"><circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round" opacity=".85"/></g><circle cx="100" cy="100" r="82" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="100" cy="100" r="76" fill="none" stroke="currentColor" stroke-width=".6" opacity=".6"/><g class="kf" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" stroke-width="2.6" d="M84 40V150"/><path pathLength="1" stroke-width="1.5" d="M68 48L84 40"/><path pathLength="1" stroke-width="1.5" d="M66 150H100"/><path pathLength="1" stroke-width="1.7" d="M86 110C104 98 120 86 136 70C142 64 150 66 148 74"/><path pathLength="1" stroke-width="2.6" d="M140 64C130 104 116 142 94 168C88 175 76 174 76 164"/><path pathLength="1" stroke-width="1.5" d="M122 66C134 60 150 60 162 66"/><path pathLength="1" stroke-width="1.5" d="M112 108L146 102"/><path pathLength="1" stroke-width="1.7" d="M96 108C112 124 124 138 134 150"/></g><g style="color:var(--amp,var(--rose))"><use href="#fl" x="88" y="-8" width="24" height="24"/><use href="#fl" x="88" y="184" width="24" height="24"/></g></svg>
     <h1 class="names"><span class="a">Khairudin</span><span class="amp">&amp;</span><span class="b">Fathihin</span></h1>
     <svg class="fan" viewBox="0 0 200 130" aria-hidden="true">
       <path d="M100 118 L12 52 A110 110 0 0 1 188 52 Z" fill="#cfe0c4"/>
@@ -256,7 +280,6 @@ footer{padding:30px 20px 40px;font-size:14px;color:#fffaf0;text-align:center}
       <label for="ms">Ucapan (pilihan)</label>
       <textarea id="ms" rows="3"></textarea>
       <div style="text-align:center;margin-top:20px"><button class="btn fill" type="submit">Hantar RSVP</button></div>
-      <p style="font-size:13px;text-align:center;margin:12px 0 0;opacity:.7">RSVP dihantar melalui WhatsApp kepada keluarga pengantin.</p>
     </form>
   </section>
   <div class="stitch lt" style="background-color:var(--olive)"></div>
@@ -267,12 +290,6 @@ footer{padding:30px 20px 40px;font-size:14px;color:#fffaf0;text-align:center}
 (function(){
   var cover=document.getElementById('cover');
   document.getElementById('open').onclick=function(){cover.classList.add('open');document.body.classList.add('opened');setTimeout(function(){cover.style.display='none'},1100);window.scrollTo(0,0)};
-  // photo slots
-  document.querySelectorAll('[data-ph]').forEach(function(el){
-    var inp=document.createElement('input');inp.type='file';inp.accept='image/*';inp.hidden=true;el.appendChild(inp);
-    el.addEventListener('click',function(e){if(e.target!==inp)inp.click()});
-    inp.onchange=function(){var f=inp.files[0];if(!f)return;var r=new FileReader();r.onload=function(){document.querySelectorAll('[data-ph]').forEach(function(x){});el.style.backgroundImage='url('+r.result+')';el.classList.add('has')};r.readAsDataURL(f)};
-  });
   // countdown
   var T=new Date('2026-12-27T11:00:00+08:00').getTime();
   function tick(){
@@ -294,7 +311,7 @@ footer{padding:30px 20px 40px;font-size:14px;color:#fffaf0;text-align:center}
     e.preventDefault();
     var a=document.querySelector('input[name=a]:checked').value;
     var t='Salam, RSVP majlis Khairudin & Fathihin (27.12.2026)%0ANama: '+encodeURIComponent(document.getElementById('nm').value)+'%0AKehadiran: '+encodeURIComponent(a)+(a==='Hadir'?'%0ABilangan: '+c:'')+(document.getElementById('ms').value?'%0AUcapan: '+encodeURIComponent(document.getElementById('ms').value):'');
-    window.open('https://wa.me/60173011253?text='+t,'_blank');
+    window.open('https://wa.me/khairdnmhtr?text='+t,'_blank');
   };
   // petals + reveal
   document.querySelectorAll('.sec:not(.hero)>*').forEach(function(x){x.classList.add('reveal')});
