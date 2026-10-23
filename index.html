@@ -321,6 +321,9 @@ body.opened .dock{display:block;animation:dockin .8s 1.2s both}
 .hero .hflo.l{left:8px;width:50%}
 .hero .hflo.r{right:8px;width:37%;transform:scaleX(-1)}
 .sec.hero{padding-bottom:124px}
+.hero .names{font-size:clamp(40px,14.5vw,68px)}
+.hero .names .amp{font-size:clamp(28px,9.5vw,42px)}
+.fam .couple{font-size:clamp(30px,9.4vw,46px)}
 </style>
 </head>
 <body>
@@ -511,6 +514,25 @@ body.opened .dock{display:block;animation:dockin .8s 1.2s both}
     function ok(){b.textContent='Disalin ✓';setTimeout(function(){b.textContent='Salin No. Akaun'},1800)}
     try{navigator.clipboard.writeText(t).then(ok,function(){})}catch(e){}
   };
+  // optical centering: cancel trailing letter-spacing so centred text isn't shifted left
+  function fixLS(){
+    var els=document.body.querySelectorAll('*');
+    for(var i=0;i<els.length;i++){
+      var el=els[i],tg=el.tagName;
+      if(tg==='SCRIPT'||tg==='STYLE'||tg==='svg'||el.closest('svg'))continue;
+      var own=false,kids=false;
+      for(var n=el.firstChild;n;n=n.nextSibling){
+        if(n.nodeType===3&&n.textContent.trim())own=true;
+        else if(n.nodeType===1&&n.tagName!=='BR')kids=true;
+      }
+      if(!own||kids)continue;
+      var cs=getComputedStyle(el),ls=parseFloat(cs.letterSpacing);
+      if(!(ls>0)||cs.textAlign!=='center')continue;
+      if(cs.display==='inline'){el.style.paddingLeft=ls+'px'}else{el.style.textIndent=ls+'px'}
+    }
+  }
+  fixLS();window.addEventListener('resize',fixLS);window.addEventListener('load',fixLS);
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fixLS);
   // dock: nav + music
   var SONG_SRC=''; // letak fail lagu (mp3) di sini
   var au=document.getElementById('bgm'),dk=document.getElementById('dock'),pi=document.getElementById('pi'),playing=false;
